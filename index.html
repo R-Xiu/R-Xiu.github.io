@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFU-EOE  IEOALab</title>
+    <meta name="description" content="國立虎尾科技大學光電工程系-智慧型光電應用研究室-NFU-EOE  IEOALab">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="circuit-background">
+        <div class="grid-pattern"></div>
+        <svg class="circuit-lines" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="circuit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00CED1" stop-opacity="0.8" />
+                    <stop offset="50%" stop-color="#48D1CC" stop-opacity="0.6" />
+                    <stop offset="100%" stop-color="#00CED1" stop-opacity="0.8" />
+                </linearGradient>
+            </defs>
+            <line x1="0" y1="20%" x2="100%" y2="20%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <line x1="0" y1="40%" x2="100%" y2="40%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <line x1="0" y1="60%" x2="100%" y2="60%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <line x1="0" y1="80%" x2="100%" y2="80%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <line x1="20%" y1="0" x2="20%" y2="100%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <line x1="40%" y1="0" x2="40%" y2="100%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <line x1="60%" y1="0" x2="60%" y2="100%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <line x1="80%" y1="0" x2="80%" y2="100%" stroke="url(#circuit-gradient)" stroke-width="2" />
+            <circle cx="20%" cy="20%" r="4" fill="#00CED1" />
+            <circle cx="40%" cy="40%" r="4" fill="#48D1CC" />
+            <circle cx="60%" cy="60%" r="4" fill="#00CED1" />
+            <circle cx="80%" cy="80%" r="4" fill="#48D1CC" />
+        </svg>
+        <div class="glow-effect glow-1"></div>
+        <div class="glow-effect glow-2"></div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#A" class="logo">
+                    <div class="logo-icon"><img src="images/IEOA.png" width="110" height="auto" style="border-radius: 8%;"></div>
+                    <div class="logo-text">
+                        <span class="logo-title">智慧型光電應用研究室</span>
+                        <span class="logo-subtitle">NFU-EOE IEOALab</span>
+                    </div>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#A" data-page="A" class="nav-link active">首頁</a>
+                    <a href="#B" data-page="B" class="nav-link">關於教授</a>
+                    <a href="#C" data-page="C" class="nav-link">研究領域</a>
+                    <a href="#D" data-page="D" class="nav-link">研究成果</a>
+                    <a href="#E" data-page="E" class="nav-link">研究團隊</a>
+                    <a href="#F" data-page="F" class="nav-link">聯絡我們</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="A" class="page section section-home active">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg> 
+						<div class="badge">國立虎尾科技大學 光電工程系 - NFU-EOE</div>
+                        <h1 class="hero-title">
+                            智慧型光電應用<br>
+                            <span class="highlight">研究室 - IEOALab</span>
+                        </h1>
+                        <p class="hero-description">
+                            致力於人工智慧系統與跨領域整合設計，培養具備AI學習、影像信號處理與嵌入式系統等專業能力的優秀人才，專精於微處理機與微控制器之嵌入式電子電路應用設計、AI學習系統開發，以及智慧型光學系統、智慧型檢測系統、視覺伺服機器系統之創新設計。
+                        </p>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-card">
+                            <div class="profile-gradient"></div>
+                            <div class="profile-content">
+                                <div class="profile-avatar">@.@</div>
+                                <h3 class="profile-name">~~ \\ 歡迎你 // ~~</h3>
+                                <p class="profile-name-en">快逃</p>
+                                <p class="profile-title">QQ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!-- About -->
+        <section id="B" class="page section section-about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">關於教授</h2>
+                    <p class="section-description">Our Boss</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-profile-card card">
+                        <div class="profile-image-wrapper">
+							<img src="images/SSC.png" width="auto" height="auto" style="border-radius: 4%;"><div class="professor-avatar">帥</div>
+                        </div>
+                        <div class="profile-info">	
+                            <h3 class="profile-name-large">陳松雄</h3>
+                            <p class="profile-name-en">Song-Shyong Chen</p>
+							<p class="profile-title-large">_____________________________________</p>	
+                        </div>	
+                    </div>
+                    <div class="about-info">
+                        <div class="card info-card">
+                            <div class="card-header">
+                                <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                </svg>
+                                <h3 class="card-title">職務資訊</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="info-item">
+                                    <span class="info-label">職稱</span>
+                                    <span class="info-value">副教授 (Associate Professor)</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">系所</span>
+                                    <span class="info-value">光電工程系 (Electro-Optical Engineering)</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">學校</span>
+                                    <span class="info-value">國立虎尾科技大學 (National Formosa University)</span>
+                                </div>
+								<div class="info-item">
+                                    <span class="info-label">聯絡</span>
+									<a href="#F" class="nav-link">聯絡資訊 Contact</a>  
+                                </div>
+								<div class="info-item">
+                                    <span class="info-label">介紹</span>
+									<a href="https://sites.google.com/view/sscheneoe/%E9%A6%96%E9%A0%81?authuser=0" target="_blank" rel="noopener noreferrer" class="link-item">
+									<span class="info-value">個人網站 </span>
+									<svg class="link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+										<polyline points="15 3 21 3 21 9"/>
+										<line x1="10" y1="14" x2="21" y2="3"/>
+									</svg>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="card info-card">
+						<div class="about-info">	
+							<div class="card-header">
+							<svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+							</svg>
+							<h3 class="card-title">學歷背景</h3>
+						</div>
+						<div class="card-content">
+                        <div class="education-timeline">
+                            <div class="education-item">
+                                <div class="education-degree">博士學位 ( Ph.D. )</div>
+                                <div class="education-detail">國立臺灣科技大學 - 電機工程研究所</div>
+								<div class="education-detail">National Taiwan University of Science and Technology - Electrical Engineering</div>
+                            </div>
+							</div>
+						</div>
+						</div>
+						</div>
+                    </div>
+                </div>
+                <div class="card expertise-card">
+                    <div class="card-header">
+						<svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+							</svg>
+                        <h3 class="card-title">專長領域</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="expertise-grid">
+                            <div class="expertise-item">
+                                <h4 class="expertise-title">電力電子應用</h4>
+                                <p class="expertise-subtitle">Power Electronics Applications</p>
+                            </div>
+                            <div class="expertise-item">
+                                <h4 class="expertise-title">模糊建模與控制</h4>
+                                <p class="expertise-subtitle">Fuzzy Modeling and Control</p>
+                            </div>
+                            <div class="expertise-item">
+                                <h4 class="expertise-title">物聯網系統開發</h4>
+                                <p class="expertise-subtitle">IoT System Development</p>
+                            </div>
+                            <div class="expertise-item">
+                                <h4 class="expertise-title">人工智慧機器學習</h4>
+                                <p class="expertise-subtitle">AI machine Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="C" class="page section section-research">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">研究領域</h2>
+                    <p class="section-description">Research Fields</p>
+                </div>
+                <div class="research-detail-grid">
+                    <div class="card research-detail-card">
+                        <h3 class="research-detail-title">嵌入式智慧晶片控制應用系統</h3>
+                        <p class="research-detail-description">*****************************************************</p>
+                        <div class="research-points">
+                            <ul class="points-list">
+                                <li>智慧微處理機應用</li>
+                                <li>智慧微控制系統設計</li>
+                                <li>智慧物聯網嵌入式系統</li>
+                                <li>人工智慧跨領域系統整合應用</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card research-detail-card"> 
+                        <h3 class="research-detail-title">人工智慧演算法跨領域整合應用系統</h3>
+                        <p class="research-detail-description">*****************************************************</p>
+                        <div class="research-points">
+                            <ul class="points-list">
+                                <li>類神經網路與模糊系統</li>
+                                <li>機器學習與深度學習</li>
+                                <li>增強式學習</li>
+                                <li>模型壓縮邊緣嵌入式</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card research-detail-card">
+                        <h3 class="research-detail-title">影像辨識檢測與視覺伺服與應用系統</h3>
+                        <p class="research-detail-description">*****************************************************</p>
+                        <div class="research-points">
+                            <ul class="points-list">
+                                <li>智慧影像電腦視覺</li>
+                                <li>智慧視覺辨識檢測</li>
+                                <li>立體視覺與多模態感測</li>
+                                <li>智慧機器視覺伺服於機器人與無人機</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card research-detail-card">                       
+                        <h3 class="research-detail-title">智慧物聯網與光學通訊資料應用系統</h3>
+                        <p class="research-detail-description">*****************************************************</p>
+                        <div class="research-points">
+                            <ul class="points-list">
+                                <li>智慧物聯網嵌入式平台建構</li>
+                                <li>智慧物聯網資料整合系統</li>
+                                <li>資料分析與雲端邊緣協同運算</li>
+                                <li>智慧光學通訊與感測應用</li>
+                            </ul>
+                        </div>
+                    </div>	
+                </div>
+				<div class="card topics-card">
+                    <div class="card-header">
+						<svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <h3 class="card-title">研究主題</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="topics-list">
+                            <span class="topic-badge">Artificial Intelligence</span>
+                            <span class="topic-badge">Internet of Things</span>
+                            <span class="topic-badge">Embedded Systems</span>
+                            <span class="topic-badge">Computer Vision & Visual Servoing</span>
+							<span class="topic-badge">Intelligent Robotics & Automation</span>
+							<span class="topic-badge">Optical Communication & Sensing</span>
+							<span class="topic-badge">Smart Systems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card research-features-card">
+                    <div class="card-header">
+						<svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                            <path d="M9 18h6"/>
+                            <path d="M10 22h4"/>
+                        </svg>
+                        <h3 class="card-title">培育能力</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-badge">理論</div>
+                                <h4 class="feature-title">理論研究</h4>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-badge">應用</div>
+                                <h4 class="feature-title">實際應用</h4>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-badge">創新</div>
+                                <h4 class="feature-title">技術創新</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications  -->
+        <section id="D" class="page section section-publications">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">研究成果</h2>
+                    <p class="section-description">Research Findings</p>
+                </div>
+				<div class="stats-grid">
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                            <line x1="12" y1="19" x2="12" y2="22"/>
+                        </svg>
+                        <div class="stat-number">XXX</div>
+                        <div class="stat-label">Boss</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                        <div class="stat-number">XXX</div>
+                        <div class="stat-label">論文</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                        <div class="stat-number">XXX</div>
+                        <div class="stat-label">比賽</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                            <path d="M9 18h6"/>
+                            <path d="M10 22h4"/>
+                        </svg>
+                        <div class="stat-number">XXX</div>
+                        <div class="stat-label">專利</div>
+                    </div>
+                </div>
+                <div class="publications-list" id="publicationsList">
+                    <!-- Publications will be loaded by JavaScript -->
+                </div>               
+            </div>
+        </section>
+        <!-- Team  -->
+        <section id="E" class="page section section-team">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">研究團隊</h2>
+                    <p class="section-description">Team</p>
+                </div>
+                
+                <div class="card collaborators-card">
+					<div class="card-header">
+                        <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="8.5" cy="7" r="4"/>
+                            <polyline points="17 11 19 13 23 9"/>
+                        </svg>
+                        <h3 class="card-title">Boss</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="collaborator-item">
+                            <div class="collaborator-info">
+                             </div>
+							<img src="images/SSC.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+							<div class="professor-details">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">陳松雄</h4>
+                                    <p class="collaborator-role">Boss</p>
+                                </div>
+                            </div>    
+							
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <h3 class="card-title">成員</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="collaborators-grid">
+                            <div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">XIU</h4>
+                                    <p class="collaborator-role">撿垃圾...</p>
+                                </div>
+                            </div>
+                            <div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">Sakury</h4>
+                                    <p class="collaborator-role">藝術家</p>
+                                </div>
+                            </div>
+                            <div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">Cheng</h4>
+                                    <p class="collaborator-role">大X帥哥</p>
+                                </div>
+                            </div>
+                            <div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">凱翔</h4>
+                                    <p class="collaborator-role">Lab親爹</p>
+                                </div>
+                            </div>
+                            <div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">淮</h4>
+                                    <p class="collaborator-role">說故事的</p>
+                                </div>
+                            </div>
+							<div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">余</h4>
+                                    <p class="collaborator-role">神選之人</p>
+                                </div>
+                            </div>
+							<div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">簡士純</h4>
+                                    <p class="collaborator-role">OO/*</p>
+                                </div>
+                            </div>
+                            <div class="collaborator-item">
+                                <img src="images/IEOA.png" width="60" height="60" style="border-radius: 50%; object-fit: cover;">
+                                <div class="collaborator-info">
+                                    <h4 class="collaborator-name">李俊彥</h4>
+                                    <p class="collaborator-role">Lab奶媽</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="F" class="page section section-contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">聯絡我們</h2>
+                    <p class="section-description">Contact</p>
+                </div>
+                <div class="contact-grid">
+					<div class="card info-card">
+                            <div class="card-header">
+                                <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <h3 class="card-title">Boss-聯絡資訊</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="contact-item">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <div>
+                                        <div class="contact-value">綜合工程三館3F BGC-309</div>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <div>
+                                        <div class="contact-value">05-631-3362</div>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <div>
+                                        <a href="mailto:sscheneoe@nfu.edu.tw" class="contact-value contact-link">sscheneoe@nfu.edu.tw</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="card info-card">
+                            <div class="card-header">
+                                <svg class="card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <h3 class="card-title">Lab-聯絡資訊</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="contact-item">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    <div>
+                                        <div class="contact-value">綜合工程一館B1 BGA-B142</div>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                    <div>
+                                        <div class="contact-value">05-631-5664 #224</div>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <div>
+                                        <a href="mailto:ASEOALab01@gmail.com" class="contact-value contact-link"> X </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div> 
+					<div class="join-cta">
+                    <h3 class="cta-title">加入我們</h3>
+                    <a href="#about" class="btn btn-primary">了解更多
+                        <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+					</div>				
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">快速連結</h3>
+                    <div class="footer-links">
+                        <a href="https://www.nfu.edu.tw/zh/academics" target="_blank" rel="noopener noreferrer">國立虎尾科技大學</a>
+                        <a href="https://it.nfu.edu.tw" target="_blank" rel="noopener noreferrer">虎科大-電子計算中心</a>
+						<a href="https://nfuoia.nfu.edu.tw/zh/home/" target="_blank" rel="noopener noreferrer">虎科大-國際處</a>
+                    </div>
+                </div>
+				<div class="footer-section">
+                    <h3 class="footer-title">快速連結</h3>
+                    <div class="footer-links">
+                        <a href="https://ieeexplore.ieee.org/author/37087172982" target="_blank" rel="noopener noreferrer">IEEE Xplore Profile</a>
+						
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+				<p>632 雲林縣虎尾鎮文化路64號</p>
+				<p>If any content on this website infringes your copyright, please contact us via email. The relevant material will be removed promptly.</p>
+                <p>&copy; <span id="currentYear"></span> National Formosa University - IEOALab | All rights reserved. | website maker : Xiu||Hsiu  </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll("section");
+
+  sections.forEach(section => {
+    section.style.display = section.id === "A" ? "block" : "none";
+  });
+  window.onscroll = null;
+  window.addEventListener("scroll", (e) => e.stopImmediatePropagation(), true);
+
+  document.documentElement.style.scrollBehavior = "auto";
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+
+      const targetId = link.getAttribute("href").substring(1);
+
+      sections.forEach(section => {
+        section.style.display = section.id === targetId ? "block" : "none";
+      });
+
+      links.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+
+      window.scrollTo({ top: 0, behavior: "instant" });
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>
